@@ -1,14 +1,15 @@
 /* Seiten-Layout */
 .app {
-  max-width: 720px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 20px 16px 40px;
+  padding: 32px 20px 60px;
 }
 
 .app-header h1 {
-  font-size: 28px;
-  margin-bottom: 24px;
-  color: #1a1a2e;
+  font-size: 34px;
+  margin-bottom: 36px;
+  color: #1e1e2e;
+  letter-spacing: -0.5px;
 }
 
 /* Abstände zwischen den Bereichen */
@@ -16,33 +17,42 @@
 .notes-section,
 .archive-section,
 .trash-section {
-  margin-bottom: 32px;
+  margin-bottom: 44px;
 }
 
 .input-section h2,
 .notes-section h2,
 .archive-section h2,
 .trash-section h2 {
-  font-size: 20px;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #e0e0e0;
+  font-size: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  color: rgba(0, 0, 0, 0.35);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .input-group {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 /* Raster für die Notiz-Karten */
 .note-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 16px;
 }
 
 /* Auf größeren Bildschirmen zwei Spalten */
-@media (min-width: 500px) {
+@media (min-width: 560px) {
   .note-container {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .app {
+    padding: 48px 20px 80px;
   }
 }
