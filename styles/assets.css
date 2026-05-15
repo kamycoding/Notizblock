@@ -1,73 +1,121 @@
-/* Buttons */
+/* Buttons – glasig und leicht */
 .btn {
   display: inline-block;
-  padding: 6px 14px;
-  font-size: 14px;
+  padding: 8px 18px;
+  font-size: 13px;
   font-weight: 600;
+  font-family: inherit;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.15s ease;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .btn:hover {
-  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 
 .btn-save {
-  background-color: #2d7d46;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-top: 8px;
+  background: rgba(45, 125, 70, 0.25);
+  color: #6fcf97;
+  border: 1px solid rgba(111, 207, 151, 0.3);
+  padding: 12px 24px;
+  font-size: 15px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.btn-save:hover {
+  background: rgba(45, 125, 70, 0.4);
+  border-color: rgba(111, 207, 151, 0.6);
 }
 
 .btn-archive {
-  background-color: #1a73e8;
-  color: #fff;
+  background: rgba(26, 115, 232, 0.2);
+  color: #7bb3f0;
+  border: 1px solid rgba(123, 179, 240, 0.3);
+}
+
+.btn-archive:hover {
+  background: rgba(26, 115, 232, 0.35);
 }
 
 .btn-notes {
-  background-color: #e8a71a;
-  color: #fff;
+  background: rgba(232, 167, 26, 0.2);
+  color: #f5d47a;
+  border: 1px solid rgba(245, 212, 122, 0.3);
+}
+
+.btn-notes:hover {
+  background: rgba(232, 167, 26, 0.35);
 }
 
 .btn-trash {
-  background-color: #d93025;
-  color: #fff;
+  background: rgba(217, 48, 37, 0.2);
+  color: #f08a82;
+  border: 1px solid rgba(240, 138, 130, 0.3);
+}
+
+.btn-trash:hover {
+  background: rgba(217, 48, 37, 0.35);
 }
 
 .btn-delete {
-  background-color: #b71c1c;
-  color: #fff;
+  background: rgba(183, 28, 28, 0.25);
+  color: #ef6c6c;
+  border: 1px solid rgba(239, 108, 108, 0.3);
 }
 
-/* Eingabefelder */
+.btn-delete:hover {
+  background: rgba(183, 28, 28, 0.45);
+}
+
+/* Eingabefelder – glasig */
 input[type="text"],
 textarea {
   width: 100%;
-  padding: 10px 12px;
+  padding: 12px 14px;
   font-size: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
   font-family: inherit;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 textarea {
-  min-height: 80px;
+  min-height: 90px;
   resize: vertical;
 }
 
 input[type="text"]:focus,
 textarea:focus {
   outline: none;
-  border-color: #1a73e8;
-  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.15);
+  border-color: rgba(123, 179, 240, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
 }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: 4px;
-  font-size: 14px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }

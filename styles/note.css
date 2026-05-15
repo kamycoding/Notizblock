@@ -1,27 +1,38 @@
-/* Karten-Layout für Notizen */
+/* Karten – glasiger Glassmorphismus-Look */
 .note-card {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 14px 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
 .note-card h3 {
   font-size: 17px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  color: #ffffff;
   word-break: break-word;
 }
 
 .note-card p {
   font-size: 14px;
-  color: #444;
-  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 14px;
   word-break: break-word;
+  line-height: 1.6;
 }
 
 .note-card .note-actions {
   display: flex;
-  gap: 6px;
+  gap: 8px;
   flex-wrap: wrap;
 }
