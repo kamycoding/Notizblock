@@ -1,4 +1,3 @@
-// Baut den HTML-Code für eine Karte im Notizen-Bereich zusammen
 function getNoteTemplate(note, indexNote) {
   return (
     '<div class="note-card">' +
@@ -12,7 +11,6 @@ function getNoteTemplate(note, indexNote) {
   );
 }
 
-// Baut den HTML-Code für eine Karte im Archiv-Bereich zusammen
 function getArchiveNoteTemplate(note, indexArchiveNote) {
   return (
     '<div class="note-card">' +
@@ -26,7 +24,6 @@ function getArchiveNoteTemplate(note, indexArchiveNote) {
   );
 }
 
-// Baut den HTML-Code für eine Karte im Papierkorb-Bereich zusammen
 function getTrashNoteTemplate(note, indexTrashNote) {
   return (
     '<div class="note-card">' +
