@@ -1,32 +1,32 @@
-/* Karten – glasiger Glassmorphismus-Look */
+/* Karten – weicher Glassmorphismus */
 .note-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 18px 20px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   transition: all 0.25s ease;
 }
 
 .note-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
 .note-card h3 {
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 8px;
-  color: #ffffff;
+  color: #1e1e2e;
   word-break: break-word;
 }
 
 .note-card p {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 14px;
+  color: rgba(0, 0, 0, 0.55);
+  margin-bottom: 16px;
   word-break: break-word;
   line-height: 1.6;
 }
