@@ -10,8 +10,8 @@
 body {
   font-family: "Ubuntu Mono", "Cascadia Code", "Fira Code", monospace;
   line-height: 1.7;
-  color: #1e1e2e;
-  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  color: #2d2d3a;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   min-height: 100vh;
 }
 
