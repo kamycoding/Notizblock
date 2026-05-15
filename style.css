@@ -1,0 +1,48 @@
+/* Seiten-Layout */
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+.app-header h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+}
+
+/* Abstände zwischen den Bereichen */
+.input-section,
+.notes-section,
+.archive-section,
+.trash-section {
+  margin-bottom: 32px;
+}
+
+.input-section h2,
+.notes-section h2,
+.archive-section h2,
+.trash-section h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+/* Raster für die Notiz-Karten */
+.note-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* Auf größeren Bildschirmen zwei Spalten */
+@media (min-width: 500px) {
+  .note-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

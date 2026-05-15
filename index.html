@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notizblock</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./styles/standard.css">
+  <link rel="stylesheet" href="./styles/assets.css">
+  <link rel="stylesheet" href="./styles/note.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header class="app-header">
+      <h1>Notizblock</h1>
+    </header>
+
+    <!-- Input area for new notes -->
+    <section class="input-section">
+      <h2>Neue Notiz</h2>
+      <div class="input-group">
+        <label for="noteTitle">Titel</label>
+        <input type="text" id="noteTitle" placeholder="Titel eingeben...">
+      </div>
+      <div class="input-group">
+        <label for="noteContent">Inhalt</label>
+        <textarea id="noteContent" placeholder="Notizinhalt eingeben..."></textarea>
+      </div>
+      <button class="btn btn-save" onclick="addNote()">Notiz speichern</button>
+    </section>
+
+    <!-- Notes section -->
+    <section class="notes-section">
+      <h2>Notizen</h2>
+      <div id="notesContent" class="note-container"></div>
+    </section>
+
+    <!-- Archive section -->
+    <section class="archive-section">
+      <h2>Archiv</h2>
+      <div id="archiveContent" class="note-container"></div>
+    </section>
+
+    <!-- Trash section -->
+    <section class="trash-section">
+      <h2>Papierkorb</h2>
+      <div id="trashContent" class="note-container"></div>
+    </section>
+  </div>
+
+  <!-- Scripts: templates.js must load first -->
+  <script src="./scripts/templates.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
